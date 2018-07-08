@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<hu.bme.mit.gamma.statechart:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hu.bme.mit.gamma.constraint="http://www.mit.bme.hu/gamma/constraint/Model" xmlns:hu.bme.mit.gamma.statechart="http://www.mit.bme.hu/gamma/statechart/Model" name="Pub">
+  <components xsi:type="hu.bme.mit.gamma.statechart:StatechartDefinition" name="PubStatechart">
+    <ports name="message">
+      <interfaceRealization>
+        <interface href="platform:/resource/god_hello_demo/model/Interfaces/Hello_interface.gsm#//@interfaces.1"/>
+      </interfaceRealization>
+    </ports>
+    <timeoutDeclarations name="StateATimeout1"/>
+    <regions name="main_region">
+      <stateNodes xsi:type="hu.bme.mit.gamma.statechart:InitialState" name="Entry0"/>
+      <stateNodes xsi:type="hu.bme.mit.gamma.statechart:State" name="StateA">
+        <entryActions xsi:type="hu.bme.mit.gamma.statechart:SetTimeoutAction" timeoutDeclaration="//@components.0/@timeoutDeclarations.0">
+          <time unit="SECOND">
+            <value xsi:type="hu.bme.mit.gamma.constraint:IntegerLiteralExpression" value="1"/>
+          </time>
+        </entryActions>
+        <entryActions xsi:type="hu.bme.mit.gamma.statechart:RaiseEventAction" port="//@components.0/@ports.0">
+          <event href="platform:/resource/god_hello_demo/model/Interfaces/Hello_interface.gsm#//@interfaces.1/@events.0/@event"/>
+        </entryActions>
+      </stateNodes>
+    </regions>
+    <transitions sourceState="//@components.0/@regions.0/@stateNodes.0" targetState="//@components.0/@regions.0/@stateNodes.1"/>
+    <transitions sourceState="//@components.0/@regions.0/@stateNodes.1" targetState="//@components.0/@regions.0/@stateNodes.1">
+      <trigger xsi:type="hu.bme.mit.gamma.statechart:EventTrigger">
+        <eventReference xsi:type="hu.bme.mit.gamma.statechart:TimeoutEventReference" timeout="//@components.0/@timeoutDeclarations.0"/>
+      </trigger>
+    </transitions>
+  </components>
+</hu.bme.mit.gamma.statechart:Package>

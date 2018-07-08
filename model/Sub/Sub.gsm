@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<hu.bme.mit.gamma.statechart:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hu.bme.mit.gamma.statechart="http://www.mit.bme.hu/gamma/statechart/Model" name="Sub">
+  <components xsi:type="hu.bme.mit.gamma.statechart:StatechartDefinition" name="SubStatechart">
+    <ports name="message">
+      <interfaceRealization realizationMode="REQUIRED">
+        <interface href="platform:/resource/god_hello_demo/model/Interfaces/Hello_interface.gsm#//@interfaces.1"/>
+      </interfaceRealization>
+    </ports>
+    <ports name="notification">
+      <interfaceRealization>
+        <interface href="platform:/resource/god_hello_demo/model/Interfaces/Hello_interface.gsm#//@interfaces.0"/>
+      </interfaceRealization>
+    </ports>
+    <regions name="main_region">
+      <stateNodes xsi:type="hu.bme.mit.gamma.statechart:InitialState" name="Entry0"/>
+      <stateNodes xsi:type="hu.bme.mit.gamma.statechart:State" name="StateA"/>
+    </regions>
+    <transitions sourceState="//@components.0/@regions.0/@stateNodes.0" targetState="//@components.0/@regions.0/@stateNodes.1"/>
+    <transitions sourceState="//@components.0/@regions.0/@stateNodes.1" targetState="//@components.0/@regions.0/@stateNodes.1">
+      <trigger xsi:type="hu.bme.mit.gamma.statechart:EventTrigger">
+        <eventReference xsi:type="hu.bme.mit.gamma.statechart:PortEventReference" port="//@components.0/@ports.0">
+          <event href="platform:/resource/god_hello_demo/model/Interfaces/Hello_interface.gsm#//@interfaces.1/@events.0/@event"/>
+        </eventReference>
+      </trigger>
+      <effects xsi:type="hu.bme.mit.gamma.statechart:RaiseEventAction" port="//@components.0/@ports.1">
+        <event href="platform:/resource/god_hello_demo/model/Interfaces/Hello_interface.gsm#//@interfaces.0/@events.0/@event"/>
+      </effects>
+    </transitions>
+  </components>
+</hu.bme.mit.gamma.statechart:Package>

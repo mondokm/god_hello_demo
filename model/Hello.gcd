@@ -1,0 +1,20 @@
+import pubwrapper
+import subwrapper
+
+package hello
+
+async Hello [
+	// Component ports
+	port notification : provides notification
+] {
+	// Components of the composite model
+	component pub : PubWrapper
+	component sub : SubWrapper
+	
+	// Binding system ports to the ports of the components	
+	bind notification -> sub.notification
+	
+	// Connecting ports of components using channels
+	channel [pub.message] -o)- [sub.message]
+	
+}

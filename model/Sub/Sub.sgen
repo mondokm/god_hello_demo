@@ -1,0 +1,25 @@
+GeneratorModel for yakindu::java {
+
+	statechart Sub {
+
+		feature Outlet {
+			targetProject = "god_hello_demo"
+			targetFolder = "src-gen"
+		}
+		
+		feature Naming {
+			basePackage = "org.yakindu.scr"
+		}
+
+		feature GeneralFeatures {
+			RuntimeService = true
+			TimerService = true
+			InterfaceObserverSupport = true
+		}
+		
+		feature SynchronizedWrapper {
+			namePrefix =  "Synchronized" 
+			nameSuffix =  "" 
+		}
+	}
+}

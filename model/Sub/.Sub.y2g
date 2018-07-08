@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ASCII"?>
+<hu.bme.mit.gamma.yakindu.transformation:Y2GTrace xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hu.bme.mit.gamma.yakindu.transformation="http://www.mit.bme.hu/gamma/yakindu/transformation/Traceability">
+  <yakinduStatechart href="platform:/resource/god_hello_demo/model/Sub/Sub.sct#_krKvgHuJEeiMlc1xVt_OdA"/>
+  <gammaStatechart href="Sub.gsm#//@components.0"/>
+  <traces xsi:type="hu.bme.mit.gamma.yakindu.transformation:Trace">
+    <from href="platform:/resource/god_hello_demo/model/Sub/Sub.sct#_krKvgHuJEeiMlc1xVt_OdA"/>
+    <to href="Sub.gsm#//@components.0"/>
+    <to href="platform:/resource/god_hello_demo/model/Sub/Sub.sct#_krKvgHuJEeiMlc1xVt_OdA"/>
+  </traces>
+  <traces xsi:type="hu.bme.mit.gamma.yakindu.transformation:Trace">
+    <from href="platform:/resource/god_hello_demo/model/Sub/Sub.sct#_krNLwHuJEeiMlc1xVt_OdA"/>
+    <to href="Sub.gsm#//@components.0/@regions.0"/>
+  </traces>
+  <traces xsi:type="hu.bme.mit.gamma.yakindu.transformation:Trace">
+    <from href="platform:/resource/god_hello_demo/model/Sub/Sub.sct#_kr5vUHuJEeiMlc1xVt_OdA"/>
+    <to href="Sub.gsm#//@components.0/@regions.0/@stateNodes.0"/>
+  </traces>
+  <traces xsi:type="hu.bme.mit.gamma.yakindu.transformation:Trace">
+    <from href="platform:/resource/god_hello_demo/model/Sub/Sub.sct#_kr69d3uJEeiMlc1xVt_OdA"/>
+    <to href="Sub.gsm#//@components.0/@regions.0/@stateNodes.1"/>
+  </traces>
+  <traces xsi:type="hu.bme.mit.gamma.yakindu.transformation:Trace">
+    <from href="platform:/resource/god_hello_demo/model/Sub/Sub.sct#_kr-AwXuJEeiMlc1xVt_OdA"/>
+    <to href="Sub.gsm#//@components.0/@transitions.0"/>
+  </traces>
+  <traces xsi:type="hu.bme.mit.gamma.yakindu.transformation:Trace">
+    <from href="platform:/resource/god_hello_demo/model/Sub/Sub.sct#_gv0e0HuKEeiMlc1xVt_OdA"/>
+    <to href="Sub.gsm#//@components.0/@transitions.1"/>
+  </traces>
+  <traces xsi:type="hu.bme.mit.gamma.yakindu.transformation:Trace">
+    <from href="platform:/resource/god_hello_demo/model/Sub/Sub.sct#SCT_/0/@scopes.0"/>
+    <to href="Sub.gsm#//@components.0/@ports.0"/>
+  </traces>
+  <traces xsi:type="hu.bme.mit.gamma.yakindu.transformation:Trace">
+    <from href="platform:/resource/god_hello_demo/model/Sub/Sub.sct#SCT_/0/@scopes.1"/>
+    <to href="Sub.gsm#//@components.0/@ports.1"/>
+  </traces>
+  <traces xsi:type="hu.bme.mit.gamma.yakindu.transformation:Trace">
+    <from href="platform:/resource/god_hello_demo/model/Sub/Sub.sct#SCT_Sub.message.hello"/>
+    <to href="platform:/resource/god_hello_demo/model/Interfaces/Hello_interface.gsm#//@interfaces.1/@events.0/@event"/>
+  </traces>
+  <traces xsi:type="hu.bme.mit.gamma.yakindu.transformation:Trace">
+    <from href="platform:/resource/god_hello_demo/model/Sub/Sub.sct#SCT_Sub.notification.received"/>
+    <to href="platform:/resource/god_hello_demo/model/Interfaces/Hello_interface.gsm#//@interfaces.0/@events.0/@event"/>
+  </traces>
+  <traces xsi:type="hu.bme.mit.gamma.yakindu.transformation:Trace">
+    <from href="platform:/resource/god_hello_demo/model/Sub/Sub.sct#SCT_/0/@regions.0/@vertices.1/@outgoingTransitions.0/@trigger/@triggers.0"/>
+    <to href="Sub.gsm#//@components.0/@transitions.1/@trigger.0"/>
+  </traces>
+  <traces xsi:type="hu.bme.mit.gamma.yakindu.transformation:ExpressionTrace">
+    <from href="platform:/resource/god_hello_demo/model/Sub/Sub.sct#SCT_/0/@regions.0/@vertices.1/@outgoingTransitions.0/@effect/@actions.0/@event"/>
+    <to href="Sub.gsm#//@components.0/@transitions.1/@effects.0"/>
+  </traces>
+  <traces xsi:type="hu.bme.mit.gamma.yakindu.transformation:ExpressionTrace">
+    <from href="platform:/resource/god_hello_demo/model/Sub/Sub.sct#SCT_/0/@regions.0/@vertices.1/@outgoingTransitions.0/@effect/@actions.0"/>
+    <to href="Sub.gsm#//@components.0/@transitions.1/@effects.0"/>
+  </traces>
+</hu.bme.mit.gamma.yakindu.transformation:Y2GTrace>

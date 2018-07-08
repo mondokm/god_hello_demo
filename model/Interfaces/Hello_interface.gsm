@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<hu.bme.mit.gamma.statechart.interface:StatechartInterfaces xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:hu.bme.mit.gamma.statechart.interface="http://www.mit.bme.hu/gamma/statechart/Model/Interface">
+  <interfaces name="notification">
+    <events direction="OUT">
+      <event name="received"/>
+    </events>
+  </interfaces>
+  <interfaces name="message">
+    <events direction="OUT">
+      <event name="hello"/>
+    </events>
+  </interfaces>
+</hu.bme.mit.gamma.statechart.interface:StatechartInterfaces>

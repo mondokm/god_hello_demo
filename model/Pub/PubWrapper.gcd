@@ -1,0 +1,17 @@
+import Pub
+package pubwrapper
+async PubWrapper of PubStatechart [
+] {
+    //  Clocks
+    clock clockSignal (rate = 300 ms)
+    
+    //  Control  specifications 
+    when clockSignal / run 
+    
+    
+    // Message  queues
+    queue executionMessages(priority = 2, capacity = 8) {
+        clockSignal
+    }
+    
+}

@@ -1,0 +1,4 @@
+statechart Sub mappings{
+	map message = message as required
+	map notification = notification as provided
+}
