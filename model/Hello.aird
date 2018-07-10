@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:hu.bme.mit.gamma.dds="http://hu.bme.mit.gamma.dds" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis xmi:id="_IgZ9MILMEeimpce-4VzCsw" selectedViews="_JndE0ILMEeimpce-4VzCsw" version="12.0.0.201704271200">
+    <semanticResources>Hello.god</semanticResources>
+    <semanticResources>Hello.gcd</semanticResources>
+    <semanticResources>Pub/PubWrapper.gcd</semanticResources>
+    <semanticResources>Sub/SubWrapper.gcd</semanticResources>
+    <semanticResources>Interfaces/Hello_interface.gsm</semanticResources>
+    <semanticResources>Sub/Sub.gsm</semanticResources>
+    <semanticResources>Pub/Pub.gsm</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_JndE0ILMEeimpce-4VzCsw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/hu.bme.mit.gamma.dds.design/description/dds.odesign#//@ownedViewpoints[name='distributedsystem']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_Jw1DQILMEeimpce-4VzCsw" name="DistributedSystem diagram" repPath="#_JwnA0ILMEeimpce-4VzCsw">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/hu.bme.mit.gamma.dds.design/description/dds.odesign#//@ownedViewpoints[name='distributedsystem']/@ownedRepresentations[name='DistributedSystem%20diagram']"/>
+        <target xmi:type="hu.bme.mit.gamma.dds:DistributedSystem" href="Hello.god#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_NZzVEILMEeimpce-4VzCsw" name="new DistributedSystem diagram" repPath="#_NZwRwILMEeimpce-4VzCsw">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/hu.bme.mit.gamma.dds.design/description/dds.odesign#//@ownedViewpoints[name='distributedsystem']/@ownedRepresentations[name='DistributedSystem%20diagram']"/>
+        <target xmi:type="hu.bme.mit.gamma.dds:DistributedSystem" href="Hello.god#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="_JwnA0ILMEeimpce-4VzCsw" name="DistributedSystem diagram">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_JwnA0YLMEeimpce-4VzCsw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_JwnA0oLMEeimpce-4VzCsw"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_JyURAILMEeimpce-4VzCsw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_JyURAYLMEeimpce-4VzCsw" type="Sirius" element="_JwnA0ILMEeimpce-4VzCsw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_JzTvgILMEeimpce-4VzCsw" type="2001" element="_JwnA1ILMEeimpce-4VzCsw">
+          <children xmi:type="notation:Node" xmi:id="_Jz0F0ILMEeimpce-4VzCsw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Jz0F0YLMEeimpce-4VzCsw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_J0XfcILMEeimpce-4VzCsw" type="3003" element="_JwnA1YLMEeimpce-4VzCsw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_J0XfcYLMEeimpce-4VzCsw" fontName="Sans"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J0XfcoLMEeimpce-4VzCsw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_JzTvgYLMEeimpce-4VzCsw" fontName="Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JzTvgoLMEeimpce-4VzCsw" width="30" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_J0UcIILMEeimpce-4VzCsw" type="2001" element="_JwnA1oLMEeimpce-4VzCsw">
+          <children xmi:type="notation:Node" xmi:id="_J0VqQILMEeimpce-4VzCsw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_J0VqQYLMEeimpce-4VzCsw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_J0YtkILMEeimpce-4VzCsw" type="3003" element="_JwnA14LMEeimpce-4VzCsw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_J0YtkYLMEeimpce-4VzCsw" fontName="Sans"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J0YtkoLMEeimpce-4VzCsw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_J0UcIYLMEeimpce-4VzCsw" fontName="Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J0UcIoLMEeimpce-4VzCsw" width="30" height="30"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_JyURAoLMEeimpce-4VzCsw"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_JwnA1ILMEeimpce-4VzCsw" name="PubNode" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="hu.bme.mit.gamma.dds:Node" href="Hello.god#//@nodes.0"/>
+      <semanticElements xmi:type="hu.bme.mit.gamma.dds:Node" href="Hello.god#//@nodes.0"/>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_JwnA1YLMEeimpce-4VzCsw" labelPosition="node" color="173,127,168">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/hu.bme.mit.gamma.dds.design/description/dds.odesign#//@ownedViewpoints[name='distributedsystem']/@ownedRepresentations[name='DistributedSystem%20diagram']/@defaultLayer/@nodeMappings[name='Node']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.gamma.dds.design/description/dds.odesign#//@ownedViewpoints[name='distributedsystem']/@ownedRepresentations[name='DistributedSystem%20diagram']/@defaultLayer/@nodeMappings[name='Node']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_JwnA1oLMEeimpce-4VzCsw" name="SubNode" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="hu.bme.mit.gamma.dds:Node" href="Hello.god#//@nodes.1"/>
+      <semanticElements xmi:type="hu.bme.mit.gamma.dds:Node" href="Hello.god#//@nodes.1"/>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_JwnA14LMEeimpce-4VzCsw" labelPosition="node" color="173,127,168">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/hu.bme.mit.gamma.dds.design/description/dds.odesign#//@ownedViewpoints[name='distributedsystem']/@ownedRepresentations[name='DistributedSystem%20diagram']/@defaultLayer/@nodeMappings[name='Node']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.gamma.dds.design/description/dds.odesign#//@ownedViewpoints[name='distributedsystem']/@ownedRepresentations[name='DistributedSystem%20diagram']/@defaultLayer/@nodeMappings[name='Node']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/hu.bme.mit.gamma.dds.design/description/dds.odesign#//@ownedViewpoints[name='distributedsystem']/@ownedRepresentations[name='DistributedSystem%20diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_JwnA2ILMEeimpce-4VzCsw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/hu.bme.mit.gamma.dds.design/description/dds.odesign#//@ownedViewpoints[name='distributedsystem']/@ownedRepresentations[name='DistributedSystem%20diagram']/@defaultLayer"/>
+    <target xmi:type="hu.bme.mit.gamma.dds:DistributedSystem" href="Hello.god#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_NZwRwILMEeimpce-4VzCsw" name="new DistributedSystem diagram">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_NZwRwYLMEeimpce-4VzCsw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_NZwRwoLMEeimpce-4VzCsw"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_NbVmIILMEeimpce-4VzCsw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_NbVmIYLMEeimpce-4VzCsw" type="Sirius" element="_NZwRwILMEeimpce-4VzCsw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_NbWNMILMEeimpce-4VzCsw" type="2001" element="_NZwRxILMEeimpce-4VzCsw">
+          <children xmi:type="notation:Node" xmi:id="_NbXbUILMEeimpce-4VzCsw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_NbXbUYLMEeimpce-4VzCsw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_NbZQgILMEeimpce-4VzCsw" type="3003" element="_NZwRxYLMEeimpce-4VzCsw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_NbZQgYLMEeimpce-4VzCsw" fontName="Sans"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NbZQgoLMEeimpce-4VzCsw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_NbWNMYLMEeimpce-4VzCsw" fontName="Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NbWNMoLMEeimpce-4VzCsw" width="30" height="30"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_NbYCYILMEeimpce-4VzCsw" type="2001" element="_NZwRxoLMEeimpce-4VzCsw">
+          <children xmi:type="notation:Node" xmi:id="_NbYpcILMEeimpce-4VzCsw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_NbYpcYLMEeimpce-4VzCsw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_NbZ3kILMEeimpce-4VzCsw" type="3003" element="_NZwRx4LMEeimpce-4VzCsw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_NbZ3kYLMEeimpce-4VzCsw" fontName="Sans"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NbZ3koLMEeimpce-4VzCsw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_NbYCYYLMEeimpce-4VzCsw" fontName="Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NbYCYoLMEeimpce-4VzCsw" x="96" width="30" height="30"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_NbVmIoLMEeimpce-4VzCsw"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_NZwRxILMEeimpce-4VzCsw" name="PubNode" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="hu.bme.mit.gamma.dds:Node" href="Hello.god#//@nodes.0"/>
+      <semanticElements xmi:type="hu.bme.mit.gamma.dds:Node" href="Hello.god#//@nodes.0"/>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_NZwRxYLMEeimpce-4VzCsw" labelPosition="node" color="173,127,168">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/hu.bme.mit.gamma.dds.design/description/dds.odesign#//@ownedViewpoints[name='distributedsystem']/@ownedRepresentations[name='DistributedSystem%20diagram']/@defaultLayer/@nodeMappings[name='Node']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.gamma.dds.design/description/dds.odesign#//@ownedViewpoints[name='distributedsystem']/@ownedRepresentations[name='DistributedSystem%20diagram']/@defaultLayer/@nodeMappings[name='Node']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_NZwRxoLMEeimpce-4VzCsw" name="SubNode" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="hu.bme.mit.gamma.dds:Node" href="Hello.god#//@nodes.1"/>
+      <semanticElements xmi:type="hu.bme.mit.gamma.dds:Node" href="Hello.god#//@nodes.1"/>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_NZwRx4LMEeimpce-4VzCsw" labelPosition="node" color="173,127,168">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/hu.bme.mit.gamma.dds.design/description/dds.odesign#//@ownedViewpoints[name='distributedsystem']/@ownedRepresentations[name='DistributedSystem%20diagram']/@defaultLayer/@nodeMappings[name='Node']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/hu.bme.mit.gamma.dds.design/description/dds.odesign#//@ownedViewpoints[name='distributedsystem']/@ownedRepresentations[name='DistributedSystem%20diagram']/@defaultLayer/@nodeMappings[name='Node']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/hu.bme.mit.gamma.dds.design/description/dds.odesign#//@ownedViewpoints[name='distributedsystem']/@ownedRepresentations[name='DistributedSystem%20diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_NZwRyILMEeimpce-4VzCsw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/hu.bme.mit.gamma.dds.design/description/dds.odesign#//@ownedViewpoints[name='distributedsystem']/@ownedRepresentations[name='DistributedSystem%20diagram']/@defaultLayer"/>
+    <target xmi:type="hu.bme.mit.gamma.dds:DistributedSystem" href="Hello.god#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>
