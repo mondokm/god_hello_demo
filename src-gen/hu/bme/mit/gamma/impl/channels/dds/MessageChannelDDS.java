@@ -5,6 +5,8 @@ import java.util.List;
 
 import com.rti.dds.domain.DomainParticipant;
 import com.rti.dds.domain.DomainParticipantFactory;
+import com.rti.dds.domain.DomainParticipantFactoryQos;
+import com.rti.dds.domain.DomainParticipantQos;
 import com.rti.dds.infrastructure.InstanceHandle_t;
 import com.rti.dds.infrastructure.RETCODE_NO_DATA;
 import com.rti.dds.infrastructure.ResourceLimitsQosPolicy;
@@ -42,8 +44,13 @@ public class MessageChannelDDS {
     private List<MessageListener> listeners = new LinkedList<MessageListener>();
     private String topicName;
     
-    public MessageChannelDDS(String topicName) {
-    	this.topicName=topicName;
+    private String qosFilePath="";
+    private String qosLibrary="";
+    
+    public MessageChannelDDS(String topicName, String qosFilePath, String qosLibrary) {
+       	this.topicName=topicName;
+       	this.qosFilePath=qosFilePath;
+       	this.qosLibrary=qosLibrary;
     }
     
     public void setupWriter() {
@@ -86,6 +93,54 @@ public class MessageChannelDDS {
             return;
         }           
         
+    }
+    
+    public void setupWriter(String qosProfile) {
+    	
+		DomainParticipantFactoryQos factoryQos = new DomainParticipantFactoryQos();
+		DomainParticipantFactory.TheParticipantFactory.get_qos(factoryQos);
+		
+		factoryQos.profile.url_profile.add("file://"+qosFilePath);
+		DomainParticipantFactory.TheParticipantFactory.set_qos(factoryQos);
+		
+	    participant = DomainParticipantFactory.TheParticipantFactory.
+	    create_participant_with_profile(
+	        0, qosLibrary, qosProfile,
+	        null /* listener */, StatusKind.STATUS_MASK_NONE);
+	    if (participant == null) {
+	        System.err.println("create_participant error\n");
+	        return;
+	    }        
+	
+	    publisher = participant.create_publisher_with_profile(
+	    	qosLibrary,	qosProfile, null /* listener */,
+	        StatusKind.STATUS_MASK_NONE);
+	    if (publisher == null) {
+	        System.err.println("create_publisher error\n");
+	        return;
+	    }                   
+	
+	    String typeName = EventTypeSupport.get_type_name();
+	    EventTypeSupport.register_type(participant, typeName);
+	
+	    topic = participant.create_topic_with_profile(
+	        topicName,
+	        typeName, qosLibrary, qosProfile,
+	        null /* listener */, StatusKind.STATUS_MASK_NONE);
+	    if (topic == null) {
+	        System.err.println("create_topic error\n");
+	        return;
+	    }           
+	
+	    writer = (EventDataWriter)
+	    publisher.create_datawriter_with_profile(
+	        topic, qosLibrary,	qosProfile,
+	        null /* listener */, StatusKind.STATUS_MASK_NONE);
+	    if (writer == null) {
+	        System.err.println("create_datawriter error\n");
+	        return;
+	    }           
+	    
     }
     
     public void setupReader() {
@@ -131,6 +186,56 @@ public class MessageChannelDDS {
         }                         
 
     }
+    
+    public void setupReader(String qosProfile) {
+        	
+        	DomainParticipantFactoryQos factoryQos = new DomainParticipantFactoryQos();
+        	DomainParticipantFactory.TheParticipantFactory.get_qos(factoryQos);
+        	
+        	factoryQos.profile.url_profile.add("file://"+qosFilePath);
+        	DomainParticipantFactory.TheParticipantFactory.set_qos(factoryQos);
+        	
+            participant = DomainParticipantFactory.TheParticipantFactory.
+            create_participant_with_profile(
+                0, qosLibrary, qosProfile,
+                null /* listener */, StatusKind.STATUS_MASK_NONE);
+            if (participant == null) {
+                System.err.println("create_participant error\n");
+                return;
+            }                         
+    
+            subscriber = participant.create_subscriber_with_profile(
+            	qosLibrary, qosProfile, null /* listener */,
+                StatusKind.STATUS_MASK_NONE);
+            if (subscriber == null) {
+                System.err.println("create_subscriber error\n");
+                return;
+            }     
+    
+            String typeName = EventTypeSupport.get_type_name(); 
+            EventTypeSupport.register_type(participant, typeName);
+    
+            topic = participant.create_topic_with_profile(
+                topicName,
+                typeName, qosLibrary, qosProfile,
+                null /* listener */, StatusKind.STATUS_MASK_NONE);
+            if (topic == null) {
+                System.err.println("create_topic error\n");
+                return;
+            }                     
+    
+            listener = new EventListener();
+    
+            reader = (EventDataReader)
+            subscriber.create_datareader_with_profile(
+                topic, qosLibrary, qosProfile, listener,
+                StatusKind.STATUS_MASK_ALL);
+            if (reader == null) {
+                System.err.println("create_datareader error\n");
+                return;
+            }                         
+    
+        }
     
     
     //methods for raising events

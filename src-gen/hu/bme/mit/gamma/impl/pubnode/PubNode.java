@@ -7,8 +7,8 @@ import org.yakindu.scr.ITimer;
 
 import hu.bme.mit.gamma.impl.interfaces.*;
 import hu.bme.mit.gamma.impl.channels.*;
-import hu.bme.mit.gamma.impl.pubwrapper.*;
 import hu.bme.mit.gamma.impl.subwrapper.*;
+import hu.bme.mit.gamma.impl.pubwrapper.*;
 
 public class PubNode  {			
 	// Component instances
@@ -32,7 +32,7 @@ public class PubNode  {
 		// Registration of simple channels
 		// Registration of broadcast channels
 		// Instantiation of topics
-		messageOfPub = new MessageChannelDDS("messageOfPub");
+		messageOfPub = new MessageChannelDDS("messageOfPub","","");
 		messageOfPub.setupWriter();
 		pub.getMessage().registerListener(new MessageOfPubListener());
 		reset();
